@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dia del mes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+</head>
+  <body>
+    
+    <div class="container col-sm">
+        <br><br>
+        <h1 class="text-center my-4" > Calendario para saber si te duermes otro ratito o ya te toca trabajar </h1>
+            <form >
+                <div class="row">
+                <!--Dia-->
+                    <div class="col-sm-2 text-center">
+                        <label for="dia" class="">Dia</label>
+                        <input type="number" id="dia" name="dia" class="form-control border-success">
+                    </div>
+                <!-- Mes -->
+                <div class="col-sm-6 text-center"> 
+                        <label for="mes">Mes</label>
+                        <select id="mes" name="mes" class="form-control border-danger">
+                          <option value="0">Enero </option>
+                          <option value="1">Febrero</option>
+                          <option value="2">Marzo</option>
+                          <option value="3">Abril</option>
+                          <option value="4">Mayo</option>
+                          <option value="5">Junio</option>
+                          <option value="6">Julio</option>
+                          <option value="7">Agosto</option>
+                          <option value="8">Septiembre</option>
+                          <option value="9">Octubre</option>
+                          <option value="10">Noviembre</option>
+                          <option value="11">Diciembre</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3 text-center"> <!-- AÑO -->
+                        <label for="anio">Año</label>
+                        <input type="number" id="anio" name="anio" class="form-control border-info">
+                    </div>
+                </div>
+                
+            </form>
+            <br>
+            
+            <div class="row text-center">
+                <div class="col-sm-12">
+                  <button onclick="finDeSemana()" class="btn btn-secondary"> Calcular </button>
+                </div>
+              </div>
+            <br>
+              <p id="resultado" class=" text-center  d-flex justify-content-center p-2 text-bg-primary col-sm"> Y el dia es...</p>
+            </div>
+            
+    </div>
+    
+    <script src="/calendar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
